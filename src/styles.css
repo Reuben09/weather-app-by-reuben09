@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap");
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #100e1d
+}
+.app-container{
+
+}
+.App {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+.overall-navbar-container {
+  background-color: #1e213a;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.overall-main-container {
+  background-color: #100e1d;
+  height: 100%;
+}
+/* search-container */
+.overall-search-container {
+  height: 100%;
+  background-color: #1e213a;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  justify-content: space-around;
+}
+.overall-search-container > h1,
+.overall-search-container > h2,
+.overall-search-container > .date,
+.overall-search-container > .location {
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.search-container > button {
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  background-color: #6e707a;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 0.2rem;
+  border: 1px solid #6e707a;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.location-icon {
+  cursor: pointer;
+  background-color: #6e707a;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.input-container {
+  display: grid;
+  margin-bottom: 2rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.display-none {
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+.inner-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.cloud-image-container img {
+  opacity: 0.1;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+.cloud-rain-image-container {
+  text-align: center;
+}
+.cloud-rain-image-container img {
+  height: auto;
+  max-width: 100%;
+}
+.overall-search-container > h1 {
+  color: rgb(230, 230, 230);
+  font-size: 2.4rem;
+  margin-bottom: 0.7rem;
+  font-family: "Brygada 1918", serif;
+  font-weight: 500;
+}
+.overall-search-container > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  color: rgb(88, 85, 85);
+}
+.overall-search-container > h2,
+.overall-search-container > .date,
+.overall-search-container > .location {
+  color: rgb(230, 230, 230);
+}
+.overall-search-container > .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* weather-list */
+.weather-list {
+  cursor: pointer;
+}
+.inner-input-container {
+  border: 1px solid rgb(111, 110, 110);
+  margin-right: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.inner-input-container input {
+  background: transparent;
+  border: none;
+  width: 80%;
+  padding: 1rem 0.5rem;
+  color: rgb(230, 230, 230);
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+}
+.input-container > button {
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  background-color: #3c47e9;
+  color: #fafafa;
+  font-size: 1rem;
+  border: 1px solid #3c47e9;
+  margin-left: 0.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+button {
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+.overall-input-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: space-around;
+  padding: 0 1.5rem;
+  margin-top: 2rem;
+  transition: all 0.8s ease;
+}
+.close-container {
+  text-align: right;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.class-icon {
+  color: rgb(196, 194, 194);
+  cursor: pointer;
+  text-align: right;
+}
+.search-icon {
+  color: rgb(196, 194, 194);
+  font-family: "Nunito", sans-serif;
+}
+
+/* popular places */
+.popular-cities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+.list-places-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+.list-places-container h3 {
+  color: rgb(230, 230, 230);
+}
+.popular-cities li {
+  border: 1px solid rgb(111, 110, 110);
+  color: rgb(230, 230, 230);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.arrow-icon {
+  font-size: 1rem;
+}
+
+/* main */
+.overall-main-container {
+  width: 100%;
+}
+.card-image-container {
+  text-align: center;
+  width: 5rem;
+}
+.main-cards {
+  background-color: #1e213a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.temp-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.temp-row > p {
+  padding: 0 0.5rem;
+}
+.main-cards p {
+  font-family: "Nunito", sans-serif;
+  color: rgb(230, 230, 230);
+  font-size: 1.1rem;
+  margin: 0;
+}
+.main-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 1rem 3.7rem;
+}
+.overall-main-container {
+}
+
+/* todays-highlight */
+.today-highlight-card {
+  background-color: #1e213a;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.today-highlight-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 1rem 3.7rem;
+  margin-bottom: 1rem;
+  color: rgb(230, 230, 230);
+}
+.today-highlight-card2 {
+  padding: 1rem 0;
+  background-color: #1e213a;
+  display: flex;
+  justify: center;
+  align-items: center;
+  flex-direction: column;
+}
+.todays-highlight-container h4 {
+  color: rgb(230, 230, 230);
+  margin: 3rem 3.7rem;
+}
+.linear-icon {
+  width: 60%;
+  color: yellow;
+}
+.play-container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.today-display {
+  display: flex;
+  align-items: center;
+  margin: -2rem 0;
+}
+.today-display > h1 {
+  font-size: 2.5rem;
+}
+
+/* location list */
+.location-list > ul {
+  list-style-type: none;
+  color: rgb(230, 230, 230);
+}
+.location-list > ul > li {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* footer*/
+footer {
+  background-color: #100e1d;
+  color: rgb(230, 230, 230);
+}
+footer > p {
+  text-align: center;
+}
+footer > p > a {
+  color: rgb(230, 230, 230);
+}
+@media only screen and (max-width: 900px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    max-width: 100%;
+  }
+  .main-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .today-highlight-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cloud-image-container {
+    width: 100%;
+  }
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  .main-card-container {
+    display: grid;
+    grid-gap: 2rem;
+    margin: 1rem 2rem;
+  }
+  .today-highlight-card-container {
+    margin: 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .todays-highlight-container h4 {
+    color: rgb(230, 230, 230);
+    margin: 3rem 2rem;
+  }
+}
